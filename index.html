@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/List.png">
+</head>
+
+<body >
+    <header>
+        <nav>
+            <a>
+                <h1>Lista De Tareas</h1>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="card-container">
+                <div>
+                    <h1>Tareas por realizar</h1>
+                    <div class="inputTask">
+                        <input type="text" id="taskInput" placeholder="Ingresa nueva Tarea">
+                        <button class="btn_AddTask"  onclick="addTask()"><img width="24px" height="24px" src="assets/images/agregar_archivo.png"
+                                alt="add"></button>
+                    </div>
+                </div>
+
+                <div class="tastcontainer">
+                    <ul id="taskList">
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

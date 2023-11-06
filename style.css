@@ -1,0 +1,154 @@
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background-image: url(assets/images/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  background-color: rgba(153, 150, 201, 0.411);
+  border-radius: 2rem;
+  margin: 0 10px 10px 10px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+nav h1 {
+  margin: 0;
+}
+section {
+  display: flex;
+  background: rgba(255, 255, 255, 0.8);
+  height: 90vh;
+  justify-content: space-around;
+  margin: 0 9px 0 10px;
+  overflow: hidden;
+  border-radius: 0 1rem 1rem 0;
+}
+.card-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.884);
+  box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+  margin: 0;
+  border-bottom: 1px solid lightblue;
+}
+.card-container h1 {
+  padding: 10px;
+  border-bottom: 1px solid lightblue;
+}
+input[type="text"] {
+  border: 1px solid;
+  border-radius: 2rem;
+  margin-right: 10px;
+  width: 100%;
+  padding: 0.5rem;
+  margin-left: 10px;
+}
+.card-container ul {
+  list-style-position: inside;
+  list-style-type: none;
+  width: 500px;
+  max-width: 100%;
+  background: white;
+  box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  border-radius: 0.1rem;
+  overflow: auto;
+}
+@media screen and (max-width: 650px) {
+  .card-container ul {
+    width: 100%;
+  }
+}
+
+.card-container .task {
+  padding: 0 0 0 1rem;
+}
+
+.card-container li:not(:last-child) {
+  border-bottom: 2px solid lightblue;
+}
+
+.card-container li:first-child {
+  margin-top: 1rem;
+}
+
+.card-container li:last-child {
+  margin-bottom: 1rem;
+}
+.task {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-wrap: anywhere;
+}
+.task > .tasktext {
+  flex: auto;
+}
+.tasktext {
+  margin: 0;
+}
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  right: 0;
+  margin-right: 10px;
+}
+.btn_AddTask {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  right: 0;
+  margin-right: 10px;
+}
+.btn_AddTask:hover {
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
+}
+.delete-button:hover {
+  transform: rotate(45deg);
+  transition: 0.5s ease-in-out;
+}
+.inputTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid lightblue;
+}
+.tastcontainer {
+  overflow-y: auto;
+  height: 80%;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.delete-animation {
+  animation: fadeOut 0.8s ease;
+}
